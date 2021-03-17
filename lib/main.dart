@@ -25,19 +25,20 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-      backgroundColor: Colors.transparent,
-      shadowColor: Colors.transparent,
-      title: Center(
-        child: Text(
-          "Check your Password here",
-          style: GoogleFonts.gloriaHallelujah(
-            fontSize: 30,
-            color: Colors.orange,
-            fontWeight: FontWeight.bold,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        shadowColor: Colors.transparent,
+        title: Center(
+          child: Text(
+            "Check your Password here",
+            style: GoogleFonts.gloriaHallelujah(
+              fontSize: 30,
+              color: Colors.orange,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
       ),
-    ));
+    );
   }
 }
