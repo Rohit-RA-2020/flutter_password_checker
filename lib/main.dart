@@ -44,6 +44,12 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         specialChars = textController.text.isNotEmpty &&
             !textController.text.contains(RegExp(r'^[\w&.-]+$'), 0);
       });
+
+      if (_allValid()) {
+        _controller.forward();
+      } else {
+        _controller.reverse();
+      }
     });
   }
 
@@ -86,5 +92,9 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         ),
       ),
     );
+  }
+
+  bool _allValid() {
+    return true;
   }
 }
