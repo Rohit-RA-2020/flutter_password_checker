@@ -4,7 +4,11 @@ class ValidationItem extends StatefulWidget {
   final String title;
   final bool valid;
 
-  ValidationItem({Key key, this.title, this.valid}) : super(key: key);
+  ValidationItem({
+    Key key,
+    @required this.title,
+    @required this.valid,
+  }) : super(key: key);
 
   @override
   _ValidationItemState createState() => _ValidationItemState();

@@ -98,6 +98,21 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
               padding: const EdgeInsets.symmetric(horizontal: 32),
               child: TextField(
                 controller: textController,
+                style: TextStyle(fontSize: 20, color: Colors.black87),
+                obscureText: true,
+                decoration: InputDecoration(
+                  hintText: "Enter a password",
+                  fillColor: Colors.white,
+                  filled: true,
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(4),
+                    borderSide: BorderSide(width: 0),
+                  ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(4),
+                    borderSide: BorderSide(width: 0),
+                  ),
+                ),
               ),
             )
           ],
