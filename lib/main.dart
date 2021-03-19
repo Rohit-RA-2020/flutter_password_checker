@@ -51,6 +51,18 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         _controller.reverse();
       }
     });
+
+    _controller = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 500),
+    );
+
+    _fabScale = Tween<double>(begin: 0, end: 1)
+        .animate(CurvedAnimation(parent: _controller, curve: Curves.bounceOut));
+
+    _fabScale.addListener(() {
+      setState(() {});
+    });
   }
 
   @override
