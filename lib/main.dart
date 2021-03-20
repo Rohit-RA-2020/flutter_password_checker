@@ -129,7 +129,30 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   }
 
   Stack _validationStack() {
-    return Stack();
+    return Stack(
+      alignment: Alignment.bottomLeft,
+      children: <Widget>[
+        Card(
+          shape: CircleBorder(),
+          color: Colors.black12,
+          child: Container(
+            height: 150,
+            width: 150,
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 32.0, left: 10),
+          child: Transform.rotate(
+            angle: -math.pi / 20,
+            child: Icon(
+              Icons.lock,
+              color: Colors.pink,
+              size: 60,
+            ),
+          ),
+        )
+      ],
+    );
   }
 
   bool _allValid() {
