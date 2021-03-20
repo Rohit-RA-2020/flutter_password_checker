@@ -92,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.all(32.0),
-              child: Column(),
+              child: _validationStack(),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 32),
@@ -119,6 +119,17 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         ),
       ),
     );
+  }
+
+  Widget _separator() {
+    return Container(
+      height: 1,
+      decoration: BoxDecoration(color: Colors.blue.withAlpha(100)),
+    );
+  }
+
+  Stack _validationStack() {
+    return Stack();
   }
 
   bool _allValid() {
