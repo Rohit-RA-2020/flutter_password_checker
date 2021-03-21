@@ -174,6 +174,34 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                       ),
                     ),
                   ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(8, 4, 0, 4),
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      child: Icon(
+                        Icons.brightness_1,
+                        color: Colors.deepPurple,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(8, 4, 0, 4),
+                    child: Container(
+                        alignment: Alignment.centerLeft,
+                        child: Icon(
+                          Icons.brightness_1,
+                          color: Colors.deepPurple,
+                        )),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(8, 4, 0, 8),
+                    child: Container(
+                        alignment: Alignment.centerLeft,
+                        child: Icon(
+                          Icons.brightness_1,
+                          color: Colors.deepPurple,
+                        )),
+                  ),
                 ],
               ),
             ),
