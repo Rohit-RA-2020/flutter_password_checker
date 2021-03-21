@@ -150,6 +150,34 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
               size: 60,
             ),
           ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 50.0, right: 60.0),
+          child: Transform.rotate(
+            angle: -math.pi / -60,
+            child: Card(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadiusDirectional.circular(5),
+              ),
+              elevation: 4,
+              color: Colors.yellow.shade800,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(8, 8, 0, 4),
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      child: Icon(
+                        Icons.brightness_1,
+                        color: Colors.deepPurple,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
         )
       ],
     );
