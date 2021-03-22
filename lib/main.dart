@@ -196,12 +196,48 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                   Padding(
                     padding: const EdgeInsets.fromLTRB(8, 4, 0, 8),
                     child: Container(
-                        alignment: Alignment.centerLeft,
-                        child: Icon(
-                          Icons.brightness_1,
-                          color: Colors.deepPurple,
-                        )),
+                      alignment: Alignment.centerLeft,
+                      child: Icon(
+                        Icons.brightness_1,
+                        color: Colors.deepPurple,
+                      ),
+                    ),
                   ),
+                ],
+              ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 74),
+          child: Transform.rotate(
+            angle: math.pi / -45,
+            child: Card(
+              elevation: 6,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5),
+              ),
+              child: Stack(
+                alignment: Alignment.bottomRight,
+                children: <Widget>[
+                  IntrinsicWidth(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        ValidationItem(
+                            title: "8 Characters", valid: eightChars),
+                        _separator(),
+                        ValidationItem(
+                            title: "1 Special Character", valid: specialChars),
+                        _separator(),
+                        ValidationItem(title: "1 upper case", valid: upperCase),
+                        _separator(),
+                        ValidationItem(title: "1 number", valid: number),
+                        _separator(),
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
