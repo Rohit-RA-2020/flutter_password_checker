@@ -237,6 +237,23 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                         _separator(),
                       ],
                     ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Transform.scale(
+                      scale: _fabScale.value,
+                      child: Card(
+                        shape: CircleBorder(),
+                        color: Colors.green,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Icon(
+                            Icons.check,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
                   )
                 ],
               ),
@@ -248,6 +265,6 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   }
 
   bool _allValid() {
-    return true;
+    return eightChars && number && specialChars && upperCase;
   }
 }
