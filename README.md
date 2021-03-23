@@ -2,6 +2,9 @@
 
 A new Flutter project.
 
+
+![alt text](https://github.com/Rohit-RA-2020/flutter_password_checker/blob/master/App%20Sample/Working%20Sample.gif)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
